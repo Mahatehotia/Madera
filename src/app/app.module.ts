@@ -7,23 +7,30 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AccueilPage} from '../pages/accueil/accueil';
+import {ClientsPage} from '../pages/clients/clients';
 
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    AccueilPage
+    AccueilPage,
+    ClientsPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      backButtonText: 'Retour',
+      backButtonIcon: 'ios-arrow-back',
+      iconMode: 'md'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    AccueilPage
+    AccueilPage,
+    ClientsPage
   ],
   providers: [
     StatusBar,

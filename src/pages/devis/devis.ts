@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ClientsPage} from '../clients/clients';
 
 /**
- * Generated class for the AccueilPage page.
+ * Generated class for the DevisPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,22 +10,16 @@ import { ClientsPage} from '../clients/clients';
 
 @IonicPage()
 @Component({
-  selector: 'page-accueil',
-  templateUrl: 'accueil.html',
+  selector: 'page-devis',
+  templateUrl: 'devis.html',
 })
-export class AccueilPage {
-
-  clientsPage = ClientsPage;
+export class DevisPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad AccueilPage');
-  }
-
-  allClients(){
-    this.navCtrl.push(this.clientsPage);
+    console.log('ionViewDidLoad DevisPage');
   }
 
 }

@@ -16,6 +16,5 @@ export class HomePage {
 
   connexion(){
     this.navCtrl.setRoot(this.accueilPage);
-
   }
 }
