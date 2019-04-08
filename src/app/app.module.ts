@@ -8,6 +8,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AccueilPage} from '../pages/accueil/accueil';
 import {ClientsPage} from '../pages/clients/clients';
+import {DevisPage} from '../pages/devis/devis';
+import {CommandesPage} from '../pages/commandes/commandes';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import {ClientsPage} from '../pages/clients/clients';
     MyApp,
     HomePage,
     AccueilPage,
-    ClientsPage
+    ClientsPage,
+    DevisPage,
+    CommandesPage,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import {ClientsPage} from '../pages/clients/clients';
     MyApp,
     HomePage,
     AccueilPage,
-    ClientsPage
+    ClientsPage,
+    DevisPage,
+    CommandesPage,
   ],
   providers: [
     StatusBar,

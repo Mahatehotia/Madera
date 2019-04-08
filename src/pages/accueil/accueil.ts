@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ClientsPage} from '../clients/clients';
+import { DevisPage } from '../devis/devis';
+import {CommandesPage} from '../commandes/commandes';
 
 /**
  * Generated class for the AccueilPage page.
@@ -17,6 +19,8 @@ import { ClientsPage} from '../clients/clients';
 export class AccueilPage {
 
   clientsPage = ClientsPage;
+  devisPage = DevisPage;
+  commandesPages = CommandesPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -27,6 +31,14 @@ export class AccueilPage {
 
   allClients(){
     this.navCtrl.push(this.clientsPage);
+  }
+
+  allDevis(){
+    this.navCtrl.push(this.devisPage);
+  }
+
+  allCommandes(){
+    this.navCtrl.push(this.commandesPages);
   }
 
 }
