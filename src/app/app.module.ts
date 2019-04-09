@@ -10,6 +10,8 @@ import { AccueilPage} from '../pages/accueil/accueil';
 import {ClientsPage} from '../pages/clients/clients';
 import {DevisPage} from '../pages/devis/devis';
 import {CommandesPage} from '../pages/commandes/commandes';
+import {IonicStorageModule} from "@ionic/storage";
+import {Clients} from "../mocks/providers/clients";
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import {CommandesPage} from '../pages/commandes/commandes';
       backButtonText: 'Retour',
       backButtonIcon: 'ios-arrow-back',
       iconMode: 'md'
-    })
+    }),
+    IonicStorageModule.forRoot(),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -39,6 +42,7 @@ import {CommandesPage} from '../pages/commandes/commandes';
     CommandesPage,
   ],
   providers: [
+    Clients,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
