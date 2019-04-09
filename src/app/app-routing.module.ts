@@ -1,5 +1,4 @@
-import { NgModule }             from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 import {HomePage} from "../pages/home/home";
 import {AccueilPage} from "../pages/accueil/accueil";

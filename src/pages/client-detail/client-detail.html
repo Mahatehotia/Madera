@@ -6,10 +6,46 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>{{client.name}}</ion-title>
+    <ion-title>{{client.name}} {{client.firstname}}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3 col-lg-3 col-sm-3"></div>
+      <div class=" col-xs-6 col-lg-6 col-sm-6">
+        <ion-card *ngFor="let color of color_list" disabled="true">
+          <div class="card hovercard">
+          <div class="cardheader" [ngStyle]="{'background-color':color.color}">
+          </div>
+          <div class="avatar">
+            <img alt="" src="../../assets/imgs/user-placeholder.png">
+          </div>
+          <div class="info">
+            <div class="title">
+              <h1>{{client.name}} {{client.firstname}}</h1>
+            </div>
+            <div class="desc"><ion-icon name="home"></ion-icon> {{client.adresse}}</div>
+            <div class="desc"><ion-icon name="at"></ion-icon> {{client.email}}</div>
+            <div class="desc"><ion-icon name="call"></ion-icon> {{client.tel}}</div>
+          </div>
+          <div class="bottom">
+            <!-- Icons -->
+            <button ion-button icon-start>
+              <ion-icon name="settings"></ion-icon>
+              Gérer
+            </button>
 
+            <button ion-button icon-start>
+              <ion-icon name="trash"></ion-icon>
+               Supprimer
+            </button>
+          </div>
+          </div>
+        </ion-card>
+      </div>
+      <div class="col-xs-3 col-lg-3 col-sm-3"></div>
+    </div>
+  </div>
 </ion-content>

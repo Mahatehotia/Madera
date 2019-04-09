@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController,ModalController } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 
 import { Client } from "../../models/client";
 import { Clients} from "../../providers";
@@ -20,22 +20,12 @@ import { Clients} from "../../providers";
 export class ClientsPage {
   currentClients: Client[];
 
-  constructor(public navCtrl: NavController,  public clients: Clients, public modalCtrl : ModalController) {
+  constructor(public navCtrl: NavController,  public clients: Clients) {
     this.currentClients = this.clients.query();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ClientsPage');
-  }
-
-  addClient() {
-      let addModal = this.modalCtrl.create('ClientCreatePage');
-      addModal.onDidDismiss(client => {
-        if (client) {
-          this.clients.add(client);
-        }
-      })
-      addModal.present();
   }
 
 
