@@ -12,6 +12,7 @@ import {DevisPage} from '../pages/devis/devis';
 import {CommandesPage} from '../pages/commandes/commandes';
 import {IonicStorageModule} from "@ionic/storage";
 import {Clients} from "../mocks/providers/clients";
+import {Deviss} from "../mocks/providers/deviss";
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import {Clients} from "../mocks/providers/clients";
   ],
   providers: [
     Clients,
+    Deviss,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

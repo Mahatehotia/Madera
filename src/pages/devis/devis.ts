@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
+
+import { Devis } from "../../models/devis";
+import { Deviss} from "../../providers";
 
 /**
  * Generated class for the DevisPage page.
@@ -14,12 +17,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'devis.html',
 })
 export class DevisPage {
+  currentDeviss: Devis[];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public deviss: Deviss) {
+    this.currentDeviss = this.deviss.query();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DevisPage');
   }
 
+  /**
+   * Navigate to the detail page for this devis.
+   */
+  openDevis(devis: Devis) {
+    this.navCtrl.push('DevisDetailPage', {
+      devis: devis
+    });
+  }
 }

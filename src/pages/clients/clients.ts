@@ -4,7 +4,6 @@ import { IonicPage, NavController } from 'ionic-angular';
 import { Client } from "../../models/client";
 import { Clients} from "../../providers";
 
-
 /**
  * Generated class for the ClientsPage page.
  *
@@ -20,7 +19,7 @@ import { Clients} from "../../providers";
 export class ClientsPage {
   currentClients: Client[];
 
-  constructor(public navCtrl: NavController,  public clients: Clients) {
+  constructor(public navCtrl: NavController, public clients: Clients) {
     this.currentClients = this.clients.query();
   }
 
@@ -37,5 +36,4 @@ export class ClientsPage {
       client: client
     });
   }
-
 }
