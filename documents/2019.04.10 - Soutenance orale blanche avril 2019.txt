@@ -1,0 +1,51 @@
+Planning prévisionnel : plus centré sur le projet, mais pourquoi pas un focus sur le livrable 3 et 4
+
+Bien identifier les acteurs, parler du wbs
+Parler des ressources (pas que humaines) liées au projet avant Planning prévisionnel
+A voir avec Aurélie : vu qu'on est prestataire, les couts de notre entreprise ne doivent pas être communiqués, mais dans le cadre scolaire, ne pas communiquer peut vouloir dire ne pas avoir été fait.
+- Négociation avec le client en tant que prestataire des couts / de qui fait les supports de formations ?
+-> Couts de formations ?
+
+II - Gestion de projets - Les méthodes et outils pour la gestion de projet utilisés, parler des itérations de livraisons
+
+3.2 Cout de prestation
+
+Parler de l'échéancier de facturation
+
+II.3.3 - Couts humains internes et externes - plutot cout de facturation
+
+
+Technologies
+
+Parler de l'ancienne application et de la reprises de données : on peut dire qu'on ne reprends pas les anciennes données et que l'ancienne application va tourner en meme temps que la nouvelle jusqu'à que tous les anciens devis soient achevés.
+
+Rajouter une partie pour la sécurisation de l'application (ex: un commercial qui vole le fichier de bdd, qui applique une grosse promotion à des devis, bdd cryptée : quelle type de clé ?, jeton de connectivité - s'être connecté au moins 1 fois à internet /jour/semaine ?) 
+
+Même si c'est pas fait, bien le précisier (exemple : la synchronisation des données hors ligne)
+Les terminaux se synchro avec un serveur déjà existants ? peut être que le client a déjà un système de synchro avec d'autres applications
+On peut imaginer que Madera a déjà un ERP
+
+Attention avec le mot utilisateur lors de la documentation, il faut bien décider qui fait la documentation utilisateur. Prévoir le contrat de maintenance, quel type d'incident on prends
+
+Chaque nouvel indicateur doit être accompagné de moyens pour les mesurer
+
+
+PCA / PRA difficile car on est prestataire, si ya pas internet est ce que on peut faire un devis ? Oui
+PRA : Temps de redemarrage du serveur
+
+Plan de déploiement : Est ce qu'il y a une plateforme ? Deux plateforme : dev et production
+
+Risques pour le projet : vol d'un pc d'un commercial / Commercial qui part avec un fichier client
+
+Plan de formation : "ok on forme pas tous les commerciaux, on forme le chef de projet et lui après il fait les formations"
+
+A voir avec Aurelie : Les rex sont ils professionnels ou personnels ? 
+
+Annexe : ne pas hésiter à mettre les MCD, les documents du livrable 2 etc..
+
+______
+
+Application 
+
+Section Devis : prevoir une sorte de filtre, par statut de devis, lieu où c'est, la date à laquelle ca a été fait et la relance, affichage en liste, 
+Le client démarché par le commercial ne doit pas voir tous les devis donc le bouton "Creer un devis" ne doit pas être sur la meme page que là où ya tous les devis.
