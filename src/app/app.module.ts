@@ -6,14 +6,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { AccueilPage} from '../pages/accueil/accueil';
-import {ClientsPage} from '../pages/clients/clients';
-import {DevisPage} from '../pages/devis/devis';
-import {CommandesPage} from '../pages/commandes/commandes';
-import {IonicStorageModule} from "@ionic/storage";
-import {Clients} from "../mocks/providers/clients";
-import {Deviss} from "../mocks/providers/deviss";
-
+import { AccueilPage } from '../pages/accueil/accueil';
+import { ClientsPage } from '../pages/clients/clients';
+import { DevisPage } from '../pages/devis/devis';
+import { CommandesPage } from '../pages/commandes/commandes';
+import { CataloguePage } from "../pages/catalogue/catalogue";
+import { IonicStorageModule } from "@ionic/storage";
+import { Clients } from "../mocks/providers/clients";
+import { Deviss } from "../mocks/providers/deviss";
+import {Composants} from "../mocks/providers/composants";
+import {CreateDevisPage} from "../pages/create-devis/create-devis";
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import {Deviss} from "../mocks/providers/deviss";
     ClientsPage,
     DevisPage,
     CommandesPage,
+    CataloguePage,
+    CreateDevisPage,
   ],
   imports: [
     BrowserModule,
@@ -41,10 +45,13 @@ import {Deviss} from "../mocks/providers/deviss";
     ClientsPage,
     DevisPage,
     CommandesPage,
+    CataloguePage,
+    CreateDevisPage,
   ],
   providers: [
     Clients,
     Deviss,
+    Composants,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

@@ -1,62 +1,100 @@
 page-devis {
-  .well {
-    min-height: 20px;
-    padding: 0px;
-    margin-bottom: 20px;
-    background-color: #D9D9D9;
-    border: 1px solid #D9D9D9;
+  @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+  body {
+    padding: 30px 0px 60px;
+  }
+  .panel > .list-group .list-group-item:first-child {
+    /*border-top: 1px solid rgb(204, 204, 204);*/
+  }
+  @media (max-width: 767px) {
+    .visible-xs {
+      display: inline-block !important;
+    }
+    .block {
+      display: block !important;
+      width: 100%;
+      height: 1px !important;
+    }
+  }
+  #back-to-bootsnipp {
+    position: fixed;
+    top: 10px; right: 10px;
+  }
+
+
+  .c-search > .form-control {
     border-radius: 0px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-    padding-left: 15px;
-    border:0px;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    font-size: 1.3em;
+    padding: 12px 12px;
+    height: 44px;
+    outline: none !important;
   }
-  .thumbnail .caption {
-    padding: 9px;
-    color: #333;
-    padding-left: 0px;
-    padding-right: 0px;
+  .c-search > .form-control:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none;
   }
-  .icon-style
-  {
-    margin-right:15px;
-    font-size:18px;
-    margin-top:20px;
+  .c-search > .input-group-btn .btn {
+    border-radius: 0px;
+    border-width: 0px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    height: 44px;
   }
-  p
-  {
-    margin:3px;
+
+
+  .c-list {
+    padding: 0px;
+    min-height: 44px;
+    background-color: #A8FCA2;
   }
-  .well-add-card
-  {
-    margin-bottom:10px;
+  .title {
+    display: inline-block;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 5px 15px;
   }
-  .btn-add-card
-  {
-    margin-top:20px;
+  ul.c-controls {
+    list-style: none;
+    margin: 0px;
+    min-height: 44px;
   }
-  .thumbnail {
-    display: block;
-    padding: 4px;
-    margin-bottom: 20px;
-    line-height: 1.42857143;
-    background-color: #fff;
-    border: 6px solid #D9D9D9;
-    border-radius: 15px;
-    -webkit-transition: border .2s ease-in-out;
-    -o-transition: border .2s ease-in-out;
-    transition: border .2s ease-in-out;
-    padding-left: 0px;
-    padding-right: 0px;
+
+  ul.c-controls li {
+    margin-top: 8px;
+    float: left;
   }
-  .btn
-  {
-    border-radius:0px;
+
+  ul.c-controls li a {
+    font-size: 1.7em;
+    padding: 11px 10px 6px;
   }
-  .btn-update
-  {
-    margin-left:15px;
+  ul.c-controls li a i {
+    min-width: 24px;
+    text-align: center;
   }
+
+  ul.c-controls li a:hover {
+    background-color: rgba(51, 51, 51, 0.2);
+  }
+
+  .c-toggle {
+    font-size: 1.7em;
+  }
+
+  .name {
+    font-size: 1.7em;
+    font-weight: 700;
+  }
+
+  .c-info {
+    padding: 5px 10px;
+    font-size: 1.25em;
+  }
+
   .clientSelected:hover {
     background:#A8FCA2;
   }

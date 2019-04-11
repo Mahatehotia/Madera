@@ -35,4 +35,5 @@ export class DevisPage {
       devis: devis
     });
   }
+
 }

@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ClientsPage} from '../clients/clients';
 import { DevisPage } from '../devis/devis';
-import {CommandesPage} from '../commandes/commandes';
+import { CommandesPage } from '../commandes/commandes';
+import { CataloguePage } from "../catalogue/catalogue";
+import {CreateDevisPage} from "../create-devis/create-devis";
 
 /**
  * Generated class for the AccueilPage page.
@@ -20,7 +22,9 @@ export class AccueilPage {
 
   clientsPage = ClientsPage;
   devisPage = DevisPage;
-  commandesPages = CommandesPage;
+  commandePage = CommandesPage;
+  cataloguePage = CataloguePage;
+  createDevisPage = CreateDevisPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -38,7 +42,16 @@ export class AccueilPage {
   }
 
   allCommandes(){
-    this.navCtrl.push(this.commandesPages);
+    this.navCtrl.push(this.commandePage);
   }
+
+  allCatalogue(){
+    this.navCtrl.push(this.cataloguePage)
+  }
+
+  createDevis(){
+    this.navCtrl.push(this.createDevisPage)
+  }
+
 
 }

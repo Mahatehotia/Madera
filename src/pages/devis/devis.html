@@ -11,58 +11,45 @@
 </ion-header>
 
 <ion-content padding>
-  <div class="container" id="tourpackages-carousel">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <button ion-button icon-start class="pull-right">
-          <ion-icon name="add"></ion-icon>
-          Ajouter un devis
-        </button>
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="row">
-
-  </div>
-    <div class="row">
-      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 clientSelected" *ngFor="let devis of currentDeviss">
-        <div ion-item (click)="openDevis(devis)" class="clientSelected">
-          <div class="thumbnail">
-            <div class="caption">
-              <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  <span class="glyphicon glyphicon-credit-card"></span>
-                  <span class="glyphicon glyphicon-trash pull-right text-primary"></span>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 well well-add-card">
-                  <h4>{{devis.name}} {{devis.firstname}}</h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                </div>
-                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                  <h4>{{devis.adresse}}</h4>
-                  <button ion-button icon-start>
-                    <ion-icon name="checkmark"></ion-icon>
-                    Valider
-                  </button>
-                  <button ion-button btn-danger icon-start color="danger">
-                    <ion-icon name="trash"></ion-icon>
-                    Supprimer
-                  </button>
-                </div>
-                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-                </div>
-              </div>
-            </div>
+      <div class="col-xs-2 col-sm-2 col-sm-2"></div>
+      <div class="col-xs-8 col-sm-8 col-sm-8">
+        <div class="panel panel-default">
+          <div class="panel-heading c-list">
+            <span class="title">Devis</span>
+            <ul class="pull-right c-controls">
+              <li><a href="#" data-toggle="tooltip" data-placement="top" title="Add Contact"><ion-icon name="add"></ion-icon></a></li>
+              <li><a href="#" class="hide-search" data-command="toggle-search" data-toggle="tooltip" data-placement="top" title="Toggle Search"><ion-icon name="search"></ion-icon></a></li>
+            </ul>
           </div>
-          <ion-note item-end *ngIf="devis.note">{{devis.note}}</ion-note>
+
+          <ul class="list-group" id="contact-list">
+            <li class="list-group-item">
+              <ion-list>
+                <ion-item-sliding *ngFor="let devis of currentDeviss">
+                  <button ion-item (click)="openDevis(devis)" class="clientSelected">
+                    <div class="row">
+
+                      <div class="col-xs-3 col-sm-3">
+                        <img src="../../assets/imgs/devis.png" alt="{{devis.name}}" class="img-responsive img-circle" />
+                      </div>
+                      <div class="col-xs-7 col-sm-7">
+                        <span class="name">{{devis.name}}</span><br/>
+                        <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="{{devis.dateCreation}}"></span>
+                        <span class="visible-xs"> <span class="text-muted">{{devis.dateCreation}}</span><br/></span>
+                        <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="{{devis.prixTotalHT}}"></span>
+                        <span class="visible-xs"> <span class="text-muted">{{devis.prixTotalHT}} €</span><br/></span>
+                      </div>
+                    </div>
+                  </button>
+                </ion-item-sliding>
+              </ion-list>
+            </li>
+          </ul>
         </div>
       </div>
-    </div><!-- End row -->
-
+      <div class="col-xs-2 col-sm-2 col-sm-2"></div>
+    </div>
+  </div>
 </ion-content>
