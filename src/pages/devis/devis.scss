@@ -1,6 +1,13 @@
 page-devis {
   @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
+  ion-content{
+    background-image: url('../../assets/imgs/body.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150% auto;
+  }
+
   body {
     padding: 30px 0px 60px;
   }

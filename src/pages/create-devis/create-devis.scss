@@ -1,2 +1,89 @@
 page-create-devis {
+  ion-content{
+    background-image: url('../../assets/imgs/body.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150% auto;
+  }
+
+  .card-default {
+    color: #333;
+    background: linear-gradient(#fff,#ebebeb) repeat scroll 0 0 transparent;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+
+  /* FORM TYPOGRAPHY*/
+  input[type=button],
+  input[type=submit],
+  input[type=reset] {
+    background-color: #32CD32;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 85%;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 20px 40px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  input[type=button]:hover,
+  input[type=submit]:hover,
+  input[type=reset]:hover {
+    background-color: #32CD32;
+  }
+  input[type=button]:active,
+  input[type=submit]:active,
+  input[type=reset]:active {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+  input[type=text],
+  input[type=password] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+  input[type=text]:focus,
+  input[type=password]:focus {
+    background-color: #fff;
+    border-bottom: 2px solid #32CD32;
+  }
+  input[type=text]:placeholder,
+  input[type=password]:placeholder {
+    color: #cccccc;
+  }
+
+  .fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
 }

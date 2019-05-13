@@ -250,4 +250,10 @@ page-home {
   #icon {
     width: 90%;
   }
+  ion-content{
+    background-image: url('../../assets/imgs/body.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150% auto;
+  }
 }

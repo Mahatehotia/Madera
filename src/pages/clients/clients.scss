@@ -1,5 +1,12 @@
 page-clients{
 
+  ion-content{
+    background-image: url('../../assets/imgs/body.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150% auto;
+  }
+
   @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
   body {

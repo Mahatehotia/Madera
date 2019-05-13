@@ -17,26 +17,74 @@
   </div>
 
   <ion-list>
-    <ion-list-header>Single Selection</ion-list-header>
 
+    <ion-list-header><h1>Info Client</h1></ion-list-header>
     <ion-item>
-      <ion-label>Gender</ion-label>
-      <ion-select placeholder="Select One">
-        <ion-option value="f">Female</ion-option>
-        <ion-option value="m">Male</ion-option>
-      </ion-select>
+      <ion-label>Nouveau Client</ion-label>
+      <ion-toggle [(ngModel)]="toggleValue"></ion-toggle>
     </ion-item>
-
-    <ion-item>
-      <ion-label>Hair Color</ion-label>
-      <ion-select value="brown" okText="Okay" cancelText="Dismiss">
-        <ion-option value="brown">Brown</ion-option>
-        <ion-option value="blonde">Blonde</ion-option>
-        <ion-option value="black">Black</ion-option>
-        <ion-option value="red">Red</ion-option>
-      </ion-select>
-    </ion-item>
-
+    <br>
+    <div *ngIf="toggleValue" class="container">
+      <div class="col-xs-12 col-sm-12 col-md-12">
+        <ion-list-header><h1>Identification:</h1></ion-list-header>
+        <div class="row">
+          <div class="col-xs-5 col-sm-5 col-md-5">
+            <input type="text" id="nom" name="nom" placeholder="Nom">
+          </div>
+          <div class="col-xs-5 col-sm-5 col-md-5">
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+          </div>
+        </div>
+        <ion-list-header><h1>Adresse:</h1></ion-list-header>
+        <div class="row">
+          <div class="col-xs-5 col-sm-5 col-md-5">
+            <input type="text" id="rue" name="rue" placeholder="Rue">
+          </div>
+          <div class="col-xs-2 col-sm-2 col-md-2">
+            <input type="text" id="cp" name="cp" placeholder="CP">
+          </div>
+          <div class="col-xs-5 col-sm-5 col-md-5">
+            <input type="text" id="ville" name="ville" placeholder="Ville">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2"></div>
+        <div class="col-xs-8 col-sm-8 col-md-8">
+          <ion-item *ngIf="!toggleValue">
+            <ion-label>Clients</ion-label>
+            <ion-select placeholder="Selectionner un client" okText="Valider" cancelText="Annuler">
+              <ion-option *ngFor="let client of listClients" value="{{client.name}}">{{client.name}} {{client.firstname}}</ion-option>
+            </ion-select>
+          </ion-item>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2"></div>
+      </div>
+    </div>
   </ion-list>
+  <br>
+  <ion-list-header><h1>Données du devis</h1></ion-list-header>
+  <hr>
 
+  <ion-searchbar placeholder="Rechercher un article"
+                 (ionInput)="getItems($event)"
+                 animated="true">
+  </ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-label>{{ item }}</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+  </ion-list>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2"></div>
+            <div class="col-xs-8 col-sm-8 col-md-8 " style="text-align: center;width: 100%">
+                <input type="button" class="fadeIn fourth" value="Générer devis">
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2"></div>
+        </div>
+    </div>
 </ion-content>

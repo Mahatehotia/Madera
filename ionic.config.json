@@ -1,6 +1,8 @@
 {
   "name": "Madera",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
   "id": "825f720b"
 }

@@ -44,6 +44,12 @@ page-accueil {
   }
 
   ion-icon {
-    font-size: 250px; //Preferred size here
+    font-size: 900%; //Preferred size here
+  }
+  ion-content{
+    background-image: url('../../assets/imgs/body.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150% auto;
   }
 }
