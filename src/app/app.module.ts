@@ -8,7 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AccueilPage } from '../pages/accueil/accueil';
 import { ClientsPage } from '../pages/clients/clients';
-import { DevisPage } from '../pages/devis/devis';
+//import { DevisPage } from '../pages/devis/devis';
 import { CommandesPage } from '../pages/commandes/commandes';
 import { CataloguePage } from "../pages/catalogue/catalogue";
 import { IonicStorageModule } from "@ionic/storage";
@@ -23,7 +23,7 @@ import {CreateDevisPage} from "../pages/create-devis/create-devis";
     HomePage,
     AccueilPage,
     ClientsPage,
-    DevisPage,
+    //DevisPage,
     CommandesPage,
     CataloguePage,
     CreateDevisPage,
@@ -43,7 +43,7 @@ import {CreateDevisPage} from "../pages/create-devis/create-devis";
     HomePage,
     AccueilPage,
     ClientsPage,
-    DevisPage,
+    //DevisPage,
     CommandesPage,
     CataloguePage,
     CreateDevisPage,
@@ -54,7 +54,7 @@ import {CreateDevisPage} from "../pages/create-devis/create-devis";
     Composants,
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
   ]
 })
 export class AppModule {}

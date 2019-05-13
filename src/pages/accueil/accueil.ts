@@ -6,6 +6,7 @@ import { CommandesPage } from '../commandes/commandes';
 import { CataloguePage } from "../catalogue/catalogue";
 import {CreateDevisPage} from "../create-devis/create-devis";
 
+
 /**
  * Generated class for the AccueilPage page.
  *
@@ -27,6 +28,7 @@ export class AccueilPage {
   createDevisPage = CreateDevisPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
   ionViewDidLoad() {
@@ -37,9 +39,9 @@ export class AccueilPage {
     this.navCtrl.push(this.clientsPage);
   }
 
-  allDevis(){
-    this.navCtrl.push(this.devisPage);
-  }
+  //allDevis(){
+  //  this.navCtrl.push(this.devisPage);
+  //}
 
   allCommandes(){
     this.navCtrl.push(this.commandePage);
