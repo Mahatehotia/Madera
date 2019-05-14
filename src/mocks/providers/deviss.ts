@@ -28,7 +28,7 @@ export class Deviss{
 
                 "idDevis": "1",
                 "name" : "NODEVISMDEVIS1",
-                "etat" : "En attente",
+                "etat" : "Supprimé",
                 "unite" : "UNITE",
                 "dateCreation" : "03/02/2019",
                 "margeCommercial" : "2",
@@ -64,7 +64,7 @@ export class Deviss{
 
                 "idDevis": "3",
                 "name" : "DEVIS3",
-                "etat" : "En attente",
+                "etat" : "Validé",
                 "unite" : "UNITE",
                 "dateCreation" : "21/01/2019",
                 "margeCommercial" : "5",
@@ -82,7 +82,7 @@ export class Deviss{
 
                 "idDevis": "4",
                 "name" : "DEVIS4",
-                "etat" : "En attente",
+                "etat" : "Validé",
                 "unite" : "UNITE",
                 "dateCreation" : "16/01/2019",
                 "margeCommercial" : "5",
@@ -100,7 +100,7 @@ export class Deviss{
 
                 "idDevis": "5",
                 "name" : "DEVIS5",
-                "etat" : "En attente",
+                "etat" : "Validé",
                 "unite" : "UNITE",
                 "dateCreation" : "10/03/2019",
                 "margeCommercial" : "5",
@@ -172,7 +172,7 @@ export class Deviss{
 
                 "idDevis": "9",
                 "name" : "DEVIS9",
-                "etat" : "En attente",
+                "etat" : "Validé",
                 "unite" : "UNITE",
                 "dateCreation" : "28/02/2019",
                 "margeCommercial" : "5",
@@ -190,7 +190,7 @@ export class Deviss{
 
                 "idDevis": "10",
                 "name" : "DEVIS10",
-                "etat" : "En attente",
+                "etat" : "Annulé",
                 "unite" : "UNITE",
                 "dateCreation" : "27/02/2019",
                 "margeCommercial" : "1",
@@ -208,7 +208,7 @@ export class Deviss{
 
                 "idDevis": "11",
                 "name" : "DEVIS11",
-                "etat" : "En attente",
+                "etat" : "Validé",
                 "unite" : "UNITE",
                 "dateCreation" : "04/03/2019",
                 "margeCommercial" : "2",
@@ -226,7 +226,7 @@ export class Deviss{
 
                 "idDevis": "12",
                 "name" : "DEVIS12",
-                "etat" : "En attente",
+                "etat" : "Validé",
                 "unite" : "UNITE",
                 "dateCreation" : "02/01/2019",
                 "margeCommercial" : "4",
@@ -244,7 +244,7 @@ export class Deviss{
 
                 "idDevis": "13",
                 "name" : "DEVIS13",
-                "etat" : "En attente",
+                "etat" : "Annulé",
                 "unite" : "UNITE",
                 "dateCreation" : "26/02/2019",
                 "margeCommercial" : "3",

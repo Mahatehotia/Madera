@@ -19,7 +19,7 @@
           <div class="panel-heading c-list">
             <span class="title">Devis</span>
             <ul class="pull-right c-controls">
-              <li><a href="#" data-toggle="tooltip" data-placement="top" title="Add Contact"><ion-icon name="add"></ion-icon></a></li>
+              <li><a href="#" data-toggle="tooltip" data-placement="top" title="Add Devis"><ion-icon name="add"></ion-icon></a></li>
               <li><a href="#" class="hide-search" data-command="toggle-search" data-toggle="tooltip" data-placement="top" title="Toggle Search"><ion-icon name="search"></ion-icon></a></li>
             </ul>
           </div>
@@ -35,6 +35,8 @@
                         <img src="../../assets/imgs/devis.png" alt="{{devis.name}}" class="img-responsive img-circle" />
                       </div>
                       <div class="col-xs-7 col-sm-7">
+
+                        <span *ngIf = "">{{devis.etat}}</span><br/>
                         <span class="name">{{devis.name}}</span><br/>
                         <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="{{devis.dateCreation}}"></span>
                         <span class="visible-xs"> <span class="text-muted">{{devis.dateCreation}}</span><br/></span>

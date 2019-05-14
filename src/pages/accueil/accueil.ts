@@ -5,6 +5,7 @@ import { DevisPage } from '../devis/devis';
 import { CommandesPage } from '../commandes/commandes';
 import { CataloguePage } from "../catalogue/catalogue";
 import {CreateDevisPage} from "../create-devis/create-devis";
+import {DataPage} from "../data/data";
 
 
 /**
@@ -26,6 +27,7 @@ export class AccueilPage {
   commandePage = CommandesPage;
   cataloguePage = CataloguePage;
   createDevisPage = CreateDevisPage;
+  dataPage = DataPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
@@ -49,6 +51,10 @@ export class AccueilPage {
 
   allCatalogue(){
     this.navCtrl.push(this.cataloguePage)
+  }
+
+  allKpi(){
+    this.navCtrl.push(this.dataPage);
   }
 
   createDevis(){

@@ -16,6 +16,7 @@ import { Clients } from "../mocks/providers/clients";
 import { Deviss } from "../mocks/providers/deviss";
 import {Composants} from "../mocks/providers/composants";
 import {CreateDevisPage} from "../pages/create-devis/create-devis";
+import {DataPage} from "../pages/data/data";
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {CreateDevisPage} from "../pages/create-devis/create-devis";
     CommandesPage,
     CataloguePage,
     CreateDevisPage,
+    DataPage,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +49,7 @@ import {CreateDevisPage} from "../pages/create-devis/create-devis";
     CommandesPage,
     CataloguePage,
     CreateDevisPage,
+    DataPage
   ],
   providers: [
     Clients,
