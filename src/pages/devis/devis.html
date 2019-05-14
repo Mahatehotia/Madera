@@ -36,7 +36,7 @@
                       </div>
                       <div class="col-xs-7 col-sm-7">
 
-                        <span *ngIf = "">{{devis.etat}}</span><br/>
+                        <span *ngIf = "devis.etat == 'Validé'">{{devis.etat}}</span><br/>
                         <span class="name">{{devis.name}}</span><br/>
                         <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="{{devis.dateCreation}}"></span>
                         <span class="visible-xs"> <span class="text-muted">{{devis.dateCreation}}</span><br/></span>

@@ -6,11 +6,6 @@ import {Clients, Composants} from "../../providers";
 import {Client} from "../../models/client";
 import {Composant} from "../../models/composant";
 
-import pdfMake from 'pdfmake/build/pdfmake';
-import pdfFonts from 'pdfmake/build/vfs_fonts';
-import {PdfViewerPage} from "../pdf-viewer/pdf-viewer";
-
-pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 /**
  * Generated class for the CreateDevisPage page.
@@ -25,7 +20,6 @@ templateUrl: 'create-devis.html',
 })
 export class CreateDevisPage {
   pdfmake;
-  pdfViewer = PdfViewerPage;
   devisPage = DevisPage;
   listClients: Client[];
   allComposants: Composant[];
@@ -82,46 +76,6 @@ export class CreateDevisPage {
   }
 
   createPdf() {
-    var docDefinition = {
-      content: [
-        { text: 'REMINDER', style: 'header' },
-        { text: new Date().toTimeString(), alignment: 'right' },
-
-        { text: 'From', style: 'subheader' },
-        { text: this.letterObj.from },
-
-        { text: 'To', style: 'subheader' },
-        this.letterObj.to,
-
-        { text: this.letterObj.text, style: 'story', margin: [0, 20, 0, 20] },
-
-        {
-          ul: [
-            'Bacon',
-            'Rips',
-            'BBQ',
-          ]
-        }
-      ],
-      styles: {
-        header: {
-          fontSize: 18,
-          bold: true,
-        },
-        subheader: {
-          fontSize: 14,
-          bold: true,
-          margin: [0, 15, 0, 0]
-        },
-        story: {
-          italic: true,
-          alignment: 'center',
-          width: '50%',
-        }
-      }
-    }
-    this.pdfObj = pdfMake.createPdf(docDefinition);
-    console.log('Test');
     this.navCtrl.push('PdfViewerPage', {
     });
   }
