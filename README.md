@@ -7,4 +7,4 @@ npm install -g ionic
 <p>cd Madera</p>
 <p>ionic serve</p>
 ## Utilisateur
-<p> Pour la démonstration pas d'utilisateur requis</p>
+<p>Pour la démonstration pas d'utilisateur requis</p>
