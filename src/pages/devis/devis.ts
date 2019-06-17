@@ -18,6 +18,10 @@ import { Deviss} from "../../providers";
 })
 export class DevisPage {
   currentDeviss: Devis[];
+  valide : string = 'Valide';
+  supprime : string = 'Supprime';
+  enattente : string = 'En attente';
+
 
   constructor(public navCtrl: NavController, public deviss: Deviss) {
     this.currentDeviss = this.deviss.query();

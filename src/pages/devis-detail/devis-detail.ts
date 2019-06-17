@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { Deviss } from '../../providers';
+import {Client} from "../../models/client";
+import {Clients} from "../../providers";
 
 /**
  * Generated class for the DevisDetailPage page.
@@ -18,6 +20,8 @@ import { Deviss } from '../../providers';
 export class DevisDetailPage {
 
   devis:any;
+  client: Client;
+  clients: Client[];
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public deviss:Deviss) {
     this.devis = navParams.get('devis');
@@ -25,6 +29,7 @@ export class DevisDetailPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DevisDetailPage');
+    console.log(this.devis.idClient);
   }
 
 }

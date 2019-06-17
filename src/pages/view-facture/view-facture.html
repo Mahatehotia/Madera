@@ -6,10 +6,75 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>viewFacture</ion-title>
+    <ion-title>Facture</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2"></div>
+      <div class=" col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <img src="../../assets/imgs/logo.png">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4>Information Client:</h4>
+        <p>Nom Prénom</p><p>Adresse</p>
+      </div>
+      <div class="col-xs-2 col-sm-2 col-md-2"></div>
+      <div class=" col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      </div>
+    </div>
+    <hr>
+    <div class="row header">
+      <div class="col">Libellé Article</div>
+      <div class="col">Code Article</div>
+      <div class="col">Quantité</div>
+      <div class="col">Prix</div>
+      <div class="col">Montant</div>
+    </div>
+    <div class="row">
+      <div class="col">az</div>
+      <div class="col">123</div>
+      <div class="col">
+        <button class="button"><ion-icon ios="ios-remove" md="md-remove"></ion-icon></button>
+        <button class="button"><ion-icon ios="ios-add" md="md-add"></ion-icon></button>
+      </div>
+      <div class="col">€</div>
+      <div class="col">€</div>
+    </div>
+  </div>
+  <footer class="footer-ios footer-md">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2">
+          Email: contact@madera-construction.com
+          Tél: 02 51 98 18 32
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 " style="text-align: center;width: 100%">
+          Madera
+          Acti Est - ZA Les ajoncs
+          85000 La Roche sur Yon
+          France
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          Site web: http://madera-construction.fr<br>
+          N° SIREN: 531326254
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2"></div>
+        <div class="col-xs-8 col-sm-8 col-md-8 " style="text-align: center;width: 100%">
+          <input type="button" class="fadeIn fourth" (click)="createPdf()" value="Générer devis">
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2"></div>
+      </div>
+    </div>
+  </footer>
 </ion-content>

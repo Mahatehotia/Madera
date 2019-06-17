@@ -25,12 +25,7 @@ export class CreateDevisPage {
   allComposants: Composant[];
   toggleValue : boolean = false;
   items;
-  pdfObj = null;
-  letterObj = {
-    to: 'Taf',
-    from: 'Madera',
-    text: 'mon texte'
-  }
+  myClient;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public clients: Clients, public composants: Composants) {
     this.listClients = this.clients.query();
@@ -39,8 +34,7 @@ export class CreateDevisPage {
 
   }
   initializeItems() {
-    this.items =
-        [
+    this.items = [
       'Bloc-porte postformé Blanc',
       'Porte TORHAMN',
       'Lame multi usage 141 x 9cm, ép.27mm',
@@ -75,8 +69,11 @@ export class CreateDevisPage {
     this.navCtrl.push('DevisPage');
   }
 
-  createPdf() {
-    this.navCtrl.push('PdfViewerPage', {
+  generateFacture(){
+    this.navCtrl.push('ViewFacturePage',{Client
     });
+  }
+  onChange(){
+    console.log(this.myClient);
   }
 }

@@ -19,8 +19,8 @@
           <div class="panel-heading c-list">
             <span class="title">Devis</span>
             <ul class="pull-right c-controls">
-              <li><a href="#" data-toggle="tooltip" data-placement="top" title="Add Devis"><ion-icon name="add"></ion-icon></a></li>
-              <li><a href="#" class="hide-search" data-command="toggle-search" data-toggle="tooltip" data-placement="top" title="Toggle Search"><ion-icon name="search"></ion-icon></a></li>
+              <li><a href="#/devis" data-toggle="tooltip" data-placement="top" title="Add Devis"><ion-icon name="add"></ion-icon></a></li>
+              <li><a href="#/devis" class="hide-search" data-command="toggle-search" data-toggle="tooltip" data-placement="top" title="Toggle Search"><ion-icon name="search"></ion-icon></a></li>
             </ul>
           </div>
 
@@ -29,20 +29,20 @@
               <ion-list>
                 <ion-item-sliding *ngFor="let devis of currentDeviss">
                   <button ion-item (click)="openDevis(devis)" class="clientSelected">
-                    <div class="row">
+                    <div class="row" >
 
                       <div class="col-xs-3 col-sm-3">
                         <img src="../../assets/imgs/devis.png" alt="{{devis.name}}" class="img-responsive img-circle" />
                       </div>
                       <div class="col-xs-7 col-sm-7">
-
-                        <span *ngIf = "devis.etat == 'Validé'">{{devis.etat}}</span><br/>
-                        <span class="name">{{devis.name}}</span><br/>
-                        <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip" title="{{devis.dateCreation}}"></span>
-                        <span class="visible-xs"> <span class="text-muted">{{devis.dateCreation}}</span><br/></span>
-                        <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip" title="{{devis.prixTotalHT}}"></span>
-                        <span class="visible-xs"> <span class="text-muted">{{devis.prixTotalHT}} €</span><br/></span>
-                      </div>
+                          <span class="etat" *ngIf="devis.etat == 'Valide'" [ngStyle]="{'background-color': '#32db64'}">{{devis.etat}}</span>
+                          <span class="etat" *ngIf="devis.etat == 'Supprime'" [ngStyle]="{'background-color': '#f53d3d'}">{{devis.etat}}</span>
+                          <span class="etat" *ngIf="devis.etat == 'En attente'" [ngStyle]="{'background-color': '#488aff'}">{{devis.etat}}</span>
+                          <span class="etat" *ngIf="devis.etat == 'Annulé'" [ngStyle]="{'background-color': '#faff0c'}">{{devis.etat}}</span>
+                          <span class="name"><h1>{{devis.name}}</h1></span>
+                          <span class="visible-xs"> <span class="text-muted">{{devis.dateCreation}}</span><br/></span>
+                          <span class="visible-xs"> <span class="text-muted">{{devis.prixTotalHT}} €</span><br/></span>
+                        </div>
                     </div>
                   </button>
                 </ion-item-sliding>

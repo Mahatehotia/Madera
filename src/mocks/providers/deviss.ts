@@ -9,7 +9,7 @@ export class Deviss{
     defaultDevis: any = {
         "idDevis": "1",
         "name" : "NODEVISMDEVIS1",
-        "etat" : "En attente",
+        "etat" : "Supprime",
         "unite" : "UNITE",
         "dateCreation" : "03/02/2019",
         "margeCommercial" : "2",
@@ -28,7 +28,7 @@ export class Deviss{
 
                 "idDevis": "1",
                 "name" : "NODEVISMDEVIS1",
-                "etat" : "Supprimé",
+                "etat" : "Supprime",
                 "unite" : "UNITE",
                 "dateCreation" : "03/02/2019",
                 "margeCommercial" : "2",
@@ -64,7 +64,7 @@ export class Deviss{
 
                 "idDevis": "3",
                 "name" : "DEVIS3",
-                "etat" : "Validé",
+                "etat" : "Valide",
                 "unite" : "UNITE",
                 "dateCreation" : "21/01/2019",
                 "margeCommercial" : "5",
@@ -82,7 +82,7 @@ export class Deviss{
 
                 "idDevis": "4",
                 "name" : "DEVIS4",
-                "etat" : "Validé",
+                "etat" : "Valide",
                 "unite" : "UNITE",
                 "dateCreation" : "16/01/2019",
                 "margeCommercial" : "5",
@@ -100,7 +100,7 @@ export class Deviss{
 
                 "idDevis": "5",
                 "name" : "DEVIS5",
-                "etat" : "Validé",
+                "etat" : "Valide",
                 "unite" : "UNITE",
                 "dateCreation" : "10/03/2019",
                 "margeCommercial" : "5",
@@ -171,8 +171,8 @@ export class Deviss{
             {
 
                 "idDevis": "9",
-                "name" : "DEVIS9",
-                "etat" : "Validé",
+                "name" : "DEVISTEST",
+                "etat" : "Valide",
                 "unite" : "UNITE",
                 "dateCreation" : "28/02/2019",
                 "margeCommercial" : "5",
@@ -208,7 +208,7 @@ export class Deviss{
 
                 "idDevis": "11",
                 "name" : "DEVIS11",
-                "etat" : "Validé",
+                "etat" : "Valide",
                 "unite" : "UNITE",
                 "dateCreation" : "04/03/2019",
                 "margeCommercial" : "2",
@@ -217,7 +217,7 @@ export class Deviss{
                 "prixTotalTTC" : "1814",
                 "idPlan" : "11",
                 "idProjet" : "11",
-                "idClient" : "11",
+                "idClient" : "6",
                 "idCommercial" : "11",
 
             },
@@ -226,7 +226,7 @@ export class Deviss{
 
                 "idDevis": "12",
                 "name" : "DEVIS12",
-                "etat" : "Validé",
+                "etat" : "Valide",
                 "unite" : "UNITE",
                 "dateCreation" : "02/01/2019",
                 "margeCommercial" : "4",
@@ -235,7 +235,7 @@ export class Deviss{
                 "prixTotalTTC" : "2553",
                 "idPlan" : "12",
                 "idProjet" : "12",
-                "idClient" : "12",
+                "idClient" : "10",
                 "idCommercial" : "12",
 
             },
@@ -253,7 +253,7 @@ export class Deviss{
                 "prixTotalTT13C" : "2250",
                 "idPlan" : "13",
                 "idProjet" : "13",
-                "idClient" : "13",
+                "idClient" : "9",
                 "idCommercial" : "13",
 
             },
@@ -271,7 +271,7 @@ export class Deviss{
                 "prixTotalTTC" : "1864",
                 "idPlan" : "14",
                 "idProjet" : "14",
-                "idClient" : "14",
+                "idClient" : "1",
                 "idCommercial" : "14",
 
             },
@@ -289,7 +289,7 @@ export class Deviss{
                 "prixTotalTTC" : "1835",
                 "idPlan" : "15",
                 "idProjet" : "15",
-                "idClient" : "15",
+                "idClient" : "10",
                 "idCommercial" : "15",
 
             },
